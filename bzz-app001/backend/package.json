@@ -1,0 +1,39 @@
+{
+  "name": "bizbots-smart-app-api-express",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node --max-old-space-size=8192  ./server.js",
+    "dev": "nodemon --max-old-space-size=8192  ./server.js --ignore public/",
+    "production": "NODE_ENV=production",
+    "sample": "node ./data/load-sample-admin.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chokidar": "3.5.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "es6-promisify": "7.0.0",
+    "express": "4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mssql": "^7.2.1",
+    "node-cron": "^3.0.0",
+    "node-xlsx": "^0.19.0",
+    "read-excel-file": "5.2.25",
+    "request": "^2.88.2",
+    "socket.io": "4.2.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "description": "Bizbots.ai Smart App!",
+  "main": "app.js",
+  "keywords": [],
+  "author": "Bizbots Smart App ",
+  "license": "MIT"
+}
